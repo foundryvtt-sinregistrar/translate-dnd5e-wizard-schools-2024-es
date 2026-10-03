@@ -17,7 +17,7 @@ Spanish Babele translation for **D&D 2024 SubClasses - Wizard Schools**. It tran
 Install the module from Foundry using this manifest:
 
 ```text
-https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases/latest/download/module.json
+https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/latest/download/module.json
 ```
 
 Enable this module, the base module, Babele, the PHB 2024 module, and dnd5e. Select Spanish as Foundry's language and reload the world. Imported copies do not synchronize automatically.

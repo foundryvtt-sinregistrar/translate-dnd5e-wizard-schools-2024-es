@@ -1,5 +1,5 @@
 {
-  "id": "translate-dnd5e-2024-wizard-schools-es",
+  "id": "translate-dnd5e-wizard-schools-2024-es",
   "title": "Translation: D&D 2024 SubClasses - Wizard Schools (Spanish, Babele)",
   "description": "Spanish translation for D&D 2024 SubClasses - Wizard Schools using Babele.",
   "version": "1.0.0",
@@ -15,11 +15,11 @@
   },
   "languages": [{ "lang": "es", "name": "Español", "path": "lang/es.json" }],
   "esmodules": ["scripts/converters.mjs", "scripts/babele-register.mjs"],
-  "url": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es",
-  "manifest": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases/latest/download/module.json",
-  "download": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases/download/v1.0.0/translate-dnd5e-2024-wizard-schools-es.zip",
-  "bugs": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/issues",
-  "readme": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/blob/main/README.md",
-  "changelog": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases",
-  "license": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/blob/main/LICENSE.md"
+  "url": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es",
+  "manifest": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/latest/download/module.json",
+  "download": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/download/v1.0.0/translate-dnd5e-wizard-schools-2024-es.zip",
+  "bugs": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/issues",
+  "readme": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/blob/main/README.md",
+  "changelog": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases",
+  "license": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/blob/main/LICENSE.md"
 }

@@ -29,7 +29,7 @@ jobs:
           path: dist
       - name: Verify release assets
         run: |
-          test -f dist/translate-dnd5e-2024-wizard-schools-es.zip
+          test -f dist/translate-dnd5e-wizard-schools-2024-es.zip
           test -f dist/module.json
           test -f dist/SHA256SUMS.txt
           (cd dist && sha256sum --check SHA256SUMS.txt)

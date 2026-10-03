@@ -4,7 +4,7 @@ Hooks.once("babele.init", babele => {
     const language = game.settings.get("core", "language");
     if (typeof language !== "string" || language.split("-")[0].toLowerCase() !== "es") return;
     for (const lang of new Set([language, "es"])) {
-      babele.register({ module: "translate-dnd5e-2024-wizard-schools-es", lang, dir: "compendium" });
+      babele.register({ module: "translate-dnd5e-wizard-schools-2024-es", lang, dir: "compendium" });
     }
   });
 });
