@@ -1,7 +1,7 @@
 {
   "id": "translate-dnd5e-2024-wizard-schools-es",
-  "title": "Translation: D&D 2024 Wizard Schools Spanish (Babele)",
-  "description": "Spanish translation for D&D 2024 Wizard Schools using Babele.",
+  "title": "Translation: D&D 2024 SubClasses - Wizard Schools (Spanish, Babele)",
+  "description": "Spanish translation for D&D 2024 SubClasses - Wizard Schools using Babele.",
   "version": "1.0.0",
   "compatibility": { "minimum": "14.367", "verified": "14.368" },
   "authors": [{ "name": "foundryvtt-sinregistrar" }],

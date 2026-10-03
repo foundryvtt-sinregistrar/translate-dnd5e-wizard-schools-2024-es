@@ -1,4 +1,4 @@
-# D&D 2024 Wizard Schools — Spanish Translation
+# D&D 2024 SubClasses - Wizard Schools — Spanish Translation
 
 ![Foundry v14.368](https://img.shields.io/badge/Foundry-v14.368-green)
 ![dnd5e 6.0.3](https://img.shields.io/badge/dnd5e-6.0.3-blue)![PHB 2024 required](https://img.shields.io/badge/PHB_2024-required-orange)
@@ -8,13 +8,13 @@
 
 [![Downloads Total](https://img.shields.io/github/downloads/foundryvtt-sinregistrar/dnd5e-2024-wizard-schools/total?label=descargas%20totales)](https://github.com/foundryvtt-sinregistrar/dnd5e-2024-wizard-schools/releases)
 
-Spanish Babele translation for **D&D 2024 - Wizard Schools**.
+Spanish Babele translation for **D&D 2024 SubClasses - Wizard Schools**.
 
 ## Requirements
 
 - Foundry VTT 14.367 or newer (verified with 14.368).
 - dnd5e 6.0.3.
-- D&D 2024 - Wizard Schools 2.14.0 or newer.
+- D&D 2024 SubClasses - Wizard Schools 2.14.0 or newer.
 - Dungeons & Dragons Player's Handbook (PHB 2024).
 - Babele 2.9.1 or newer.
 

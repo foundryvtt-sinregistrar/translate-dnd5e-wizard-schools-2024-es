@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Require D&D 2024 - Wizard Schools 2.14.0 or newer.
+- Require D&D 2024 SubClasses - Wizard Schools 2.14.0 or newer.
 
 ## 1.0.0 - 2026-10-03
 
