@@ -1,0 +1,530 @@
+{
+  "label": "D&D 2024 - Escuelas de Mago",
+  "mapping": {
+    "description": "system.description.value",
+    "source": "system.source",
+    "activities": {
+      "path": "system.activities",
+      "converter": "wizardSchoolsActivitiesById"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "wizardSchoolsEffectsById"
+    },
+    "advancement": {
+      "path": "system.advancement",
+      "converter": "wizardSchoolsAdvancementById"
+    }
+  },
+  "folders": {
+    "Conjurer": "Conjurador",
+    "Enchanter": "Encantador",
+    "Necromancer": "Nigromante",
+    "Transmuter": "Transmutador"
+  },
+  "entries": {
+    "wz24ConjSava0001": {
+      "name": "Experto en Conjuración",
+      "description": "<p>Elige dos conjuros de mago de la escuela de <strong>Conjuración</strong> de nivel 2 o inferior y añádelos a tu libro de conjuros sin coste.</p><p>Además, siempre que consigas un nuevo nivel de espacios de conjuro de esta clase, puedes añadir un conjuro de mago de la escuela de Conjuración a tu libro de conjuros sin coste. El conjuro elegido debe ser de un nivel para el que tengas espacios de conjuro.</p><section class=\"secret\"><p><strong>Nota de Foundry.</strong> Igual que el rasgo oficial Experto en Evocación de 2024, la selección de estos conjuros se gestiona manualmente desde el libro de conjuros.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24MinorConj001": {
+      "name": "Conjuración Menor",
+      "description": "<p>Como acción, puedes conjurar un objeto inanimado en tu mano o en el suelo, en un espacio desocupado que puedas ver a 10 pies o menos de ti. El objeto no puede medir más de 3 pies en cualquiera de sus lados ni pesar más de 10 libras y debe tener la forma de un objeto no mágico que hayas visto antes.</p><p>El objeto es claramente mágico: emite luz tenue en un radio de 5 pies y desaparece tras 1 hora, cuando vuelves a usar este rasgo o si causa o recibe cualquier cantidad de daño.</p><section class=\"secret\"><p><strong>Adaptación 2024.</strong> El rasgo de 2014 se obtiene aquí a nivel 3 para ajustarse a la progresión de subclases del Mago 2024.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24CnjMinorAct1": {
+          "name": "",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": "10 pies; objeto en tu mano o en un espacio desocupado visible"
+          },
+          "target": {
+            "affects": {
+              "special": "Crea un objeto inanimado no mágico que hayas visto"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24BenignTrn001": {
+      "name": "Trasposición Benigna",
+      "description": "<p>Como acción, puedes teletransportarte hasta 30 pies a un espacio desocupado que puedas ver. Alternativamente, puedes elegir un espacio dentro del alcance ocupado por una criatura Pequeña o Mediana. Si la criatura es voluntaria, ambos os teletransportáis e intercambiáis vuestras posiciones.</p><p>Una vez utilizado este rasgo, debes finalizar un descanso largo o lanzar un conjuro de Conjuración de nivel 1 o superior para poder volver a usarlo.</p><section class=\"secret\"><p><strong>Automatización.</strong> El uso se recupera al finalizar un descanso largo y también al lanzar un conjuro de Conjuración de nivel 1 o superior.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24CnjBeniAct01": {
+          "name": "",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": "30 pies"
+          },
+          "target": {
+            "affects": {
+              "special": "Teletranspórtate; opcionalmente intercambia posición con una criatura voluntaria Pequeña o Mediana"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24FocusConj001": {
+      "name": "Conjuración Concentrada",
+      "description": "<p>Recibir daño no te hace perder la concentración en tus conjuros de Conjuración.</p><section class=\"secret\"><p><strong>Automatización.</strong> Foundry omite la prueba de concentración causada por daño solo cuando estás concentrado en un conjuro de Conjuración. Otras causas de pérdida de concentración no cambian.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24DurableSum01": {
+      "name": "Invocaciones Duraderas",
+      "description": "<p>Cualquier criatura que invoques o crees con un conjuro de Conjuración posee 30 puntos de golpe temporales.</p><section class=\"secret\"><p><strong>Automatización.</strong> Las criaturas creadas mediante una actividad de invocación de un conjuro de Conjuración reciben automáticamente al menos 30 PG temporales.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24Conjurer0001": {
+      "name": "Conjurador",
+      "description": "<blockquote><p>Crea objetos, invoca criaturas y domina el transporte mágico.</p></blockquote><p>Como conjurador, prefieres los conjuros que crean objetos y criaturas a partir de la nada. Puedes invocar nieblas, convocar criaturas para que combatan por ti y, a medida que aumenta tu dominio de la magia, emplear conjuros de transporte para teletransportarte grandes distancias e incluso viajar a otros planos de existencia.</p><section class=\"secret\"><p><strong>Adaptación.</strong> Esta subclase traslada la Escuela de Conjuración del Manual del Jugador de 2014 a la progresión de subclases del Mago 2024 (niveles 3, 6, 10 y 14). Experto en Conjuración usa el patrón del rasgo Experto en Evocación de 2024.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {
+        "wz24CnjAdvLvl003": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24CnjAdvLvl006": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24CnjAdvLvl010": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24CnjAdvLvl014": {
+          "title": "Rasgos de subclase"
+        }
+      }
+    },
+    "wz24EncSavant001": {
+      "name": "Experto en Encantamiento",
+      "description": "<p>Elige dos conjuros de mago de la escuela de <strong>Encantamiento</strong> de nivel 2 o inferior y añádelos a tu libro de conjuros sin coste.</p><p>Además, siempre que consigas un nuevo nivel de espacios de conjuro de esta clase, puedes añadir un conjuro de mago de Encantamiento a tu libro de conjuros sin coste. Debe ser de un nivel para el que tengas espacios de conjuro.</p><section class=\"secret\"><p><strong>Adaptación 2024.</strong> Sustituye el antiguo descuento al copiar conjuros por el patrón de Experto usado por las escuelas oficiales del Mago 2024.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24EncHypnot001": {
+      "name": "Mirada Hipnótica",
+      "description": "<p>Como acción, elige una criatura que puedas ver a 5 pies o menos de ti. Si puede verte u oírte, debe superar una salvación de Sabiduría contra la CD de tus conjuros de mago. Si falla, queda hechizada por ti hasta el final de tu siguiente turno; mientras dure, está incapacitada, su velocidad es 0 y resulta evidente que está bajo tu influencia.</p><p>En tus turnos posteriores puedes usar tu acción para mantener el efecto hasta el final de tu siguiente turno. El efecto termina si te alejas a más de 5 pies, si la criatura deja de verte u oírte o si recibe daño.</p><p>Cuando el efecto termina, o si supera la salvación inicial, no puedes volver a usar este rasgo contra esa criatura hasta que finalices un descanso largo.</p><section class=\"secret\"><p><strong>Automatización.</strong> Aplica desde el mensaje el efecto tras una salvación fallida. Foundry añade Hechizado, Incapacitado y velocidad 0, lo retira al recibir daño y registra la inmunidad hasta el descanso largo del encantador. Distancia, percepción y una salvación superada se comprueban manualmente.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24EncHypAct001": {
+          "name": "Mirada Hipnótica",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": "5 pies"
+          },
+          "target": {
+            "affects": {
+              "special": "Una criatura que pueda verte u oírte"
+            }
+          }
+        }
+      },
+      "effects": {
+        "wz24HypnoEffect1": {
+          "name": "Mirada Hipnótica",
+          "description": ""
+        }
+      },
+      "advancement": {}
+    },
+    "wz24EncInstin001": {
+      "name": "Encantamiento Instintivo",
+      "description": "<p>Cuando una criatura que puedas ver a 30 pies o menos haga una tirada de ataque contra ti, puedes usar tu reacción para intentar redirigirla. Debe existir otra criatura dentro del alcance del ataque.</p><p>El atacante realiza una salvación de Sabiduría contra la CD de tus conjuros de mago. Si falla, debe elegir como objetivo a la criatura más cercana a él, sin contaros ni a ti ni al atacante. Si hay varias a la misma distancia, el atacante elige. Si supera la salvación, no puedes volver a usar este rasgo sobre ese atacante hasta que finalices un descanso largo.</p><p>Debes decidir usar el rasgo antes de saber si el ataque impacta. Una criatura inmune a ser hechizada no se ve afectada.</p><section class=\"secret\"><p><strong>Automatización asistida.</strong> Selecciona al atacante y usa la actividad para resolver la salvación. Foundry propondrá la criatura o criaturas más cercanas; valida alcance, inmunidad y registra manualmente una salvación superada.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24EncInsAct001": {
+          "name": "Encantamiento Instintivo",
+          "activation": {
+            "condition": "Cuando una criatura visible a 30 pies o menos te tenga como objetivo de una tirada de ataque, antes de saber si impacta"
+          },
+          "range": {
+            "special": "30 pies"
+          },
+          "target": {
+            "affects": {
+              "special": "El atacante"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24EncTwinEn001": {
+      "name": "Duplicar Encantamiento",
+      "description": "<p>Cuando lanzas un conjuro de Encantamiento de nivel 1 o superior que tenga como objetivo a una sola criatura, puedes hacer que el conjuro también tenga como objetivo a una segunda criatura válida.</p><section class=\"secret\"><p><strong>Automatización.</strong> Al lanzar un conjuro compatible, Foundry amplía temporalmente su actividad a dos objetivos. Selecciona ambos objetivos antes de resolver sus tiradas o efectos.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24EncMemory001": {
+      "name": "Modificar Recuerdos",
+      "description": "<p>Cuando lanzas un conjuro de Encantamiento para hechizar a una o más criaturas, puedes hacer que una de ellas no sea consciente de que ha sido hechizada.</p><p>Además, una vez antes de que termine ese conjuro, puedes usar tu acción para intentar que esa criatura olvide parte del tiempo pasado bajo el efecto. Debe hacer una salvación de Inteligencia contra la CD de tus conjuros de mago. Si falla, olvida hasta 1 + tu modificador por Carisma horas, con un mínimo de 1 hora. Puedes elegir un periodo menor, pero nunca superior a la duración del conjuro de Encantamiento.</p><section class=\"secret\"><p><strong>Automatización asistida.</strong> La actividad resuelve la salvación y Foundry calcula el máximo de horas que puede olvidar el objetivo. La edición narrativa y el límite impuesto por la duración del conjuro quedan en manos del DJ.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24EncMemAct001": {
+          "name": "Olvidar el tiempo hechizado",
+          "activation": {
+            "condition": "Una vez antes de que termine un conjuro de Encantamiento con el que hayas hechizado al objetivo"
+          },
+          "range": {
+            "special": "La criatura afectada por tu conjuro de Encantamiento"
+          },
+          "target": {
+            "affects": {
+              "special": "Una criatura hechizada por tu conjuro"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24Enchanter001": {
+      "name": "Encantador",
+      "description": "<blockquote><p>Embelesa, pacifica y domina voluntades.</p></blockquote><p>Los encantadores perfeccionan la magia que influye sobre pensamientos y emociones. Algunos la emplean para apaciguar conflictos; otros la usan para imponer su voluntad. Su especialidad es alterar la conducta de otras criaturas y volver contra ellas sus propias decisiones.</p><section class=\"secret\"><p><strong>Adaptación.</strong> Traslada la Escuela de Encantamiento de 2014 a la progresión del Mago 2024: niveles 3, 6, 10 y 14.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {
+        "wz24EncAdv003001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24EncAdv006001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24EncAdv010001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24EncAdv014001": {
+          "title": "Rasgos de subclase"
+        }
+      }
+    },
+    "wz24NecSavant001": {
+      "name": "Experto en Nigromancia",
+      "description": "<p>Elige dos conjuros de mago de la escuela de <strong>Nigromancia</strong> de nivel 2 o inferior y añádelos a tu libro de conjuros sin coste.</p><p>Además, siempre que consigas un nuevo nivel de espacios de conjuro de esta clase, puedes añadir un conjuro de mago de Nigromancia a tu libro de conjuros sin coste. Debe ser de un nivel para el que tengas espacios de conjuro.</p><section class=\"secret\"><p><strong>Adaptación 2024.</strong> Usa el patrón moderno de los rasgos Experto de las escuelas oficiales.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24NecHarvest01": {
+      "name": "Cosecha Siniestra",
+      "description": "<p>Una vez por turno, cuando mates al menos a una criatura con un conjuro de nivel 1 o superior, recuperas puntos de golpe iguales al doble del nivel del conjuro. Si el conjuro pertenece a la escuela de Nigromancia, recuperas tres veces su nivel.</p><p>No obtienes este beneficio al matar autómatas ni muertos vivientes.</p><section class=\"secret\"><p><strong>Automatización.</strong> Al aplicar desde el mensaje el daño de un conjuro, Foundry detecta si reduce a 0 PG a un objetivo válido, calcula la curación según el nivel efectivo y limita el beneficio a una vez por turno.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24NecThrall001": {
+      "name": "Siervos Muertos Vivientes",
+      "description": "<p>Añade <strong>Animar a los muertos</strong> a tu libro de conjuros si todavía no lo tienes.</p><p>Cuando lanzas Animar a los muertos, puedes elegir como objetivo un cadáver o una pila de huesos adicional, creando un zombi o esqueleto adicional según corresponda.</p><p>Además, cada muerto viviente que crees mediante un conjuro de Nigromancia obtiene estos beneficios:</p><ul><li>Sus puntos de golpe máximos aumentan en una cantidad igual a tu nivel de mago.</li><li>Suma tu bonificador por competencia a sus tiradas de daño con armas.</li></ul><section class=\"secret\"><p><strong>Adaptación 2024.</strong> El conjuro Animar a los muertos de 2024 ya incrementa en dos criaturas por cada nivel de espacio por encima de 3; este rasgo mantiene además su criatura adicional propia. Añade el conjuro al libro manualmente para evitar duplicar o sustituir una copia ya existente.</p><p><strong>Automatización.</strong> Los muertos vivientes creados mediante una actividad de invocación de un conjuro de Nigromancia reciben automáticamente los PG adicionales y el bonificador al daño de sus armas. El objetivo adicional de Animar a los muertos se gestiona manualmente.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24NecInured001": {
+      "name": "Habituado a la Muerte en Vida",
+      "description": "<p>Obtienes resistencia al daño necrótico y tus puntos de golpe máximos no pueden ser reducidos.</p><section class=\"secret\"><p><strong>Automatización.</strong> La resistencia necrótica se aplica mediante un Active Effect y las actualizaciones que intenten reducir directamente tus PG máximos se bloquean.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {
+        "wz24NecResist001": {
+          "name": "Resistencia necrótica",
+          "description": ""
+        }
+      },
+      "advancement": {}
+    },
+    "wz24NecContrl001": {
+      "name": "Controlar Muertos Vivientes",
+      "description": "<p>Como acción, elige un muerto viviente que puedas ver a 60 pies o menos. Debe hacer una salvación de Carisma contra la CD de tus conjuros de mago. Si la supera, no puedes volver a usar este rasgo sobre esa criatura. Si falla, se vuelve amistosa hacia ti y obedece tus órdenes hasta que vuelvas a usar este rasgo.</p><p>Si el objetivo tiene Inteligencia 8 o superior, tiene ventaja en la salvación. Si tiene Inteligencia 12 o superior y falla, puede repetir la salvación al final de cada hora hasta tener éxito y liberarse.</p><section class=\"secret\"><p><strong>Automatización.</strong> Foundry valida que el objetivo sea un muerto viviente, avisa de la ventaja y las repeticiones por Inteligencia y ofrece un efecto de control tras el fallo. Aplicarlo elimina el control anterior del mismo nigromante.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24NecCtlAct001": {
+          "name": "Controlar Muerto Viviente",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": "60 pies"
+          },
+          "target": {
+            "affects": {
+              "special": "Un muerto viviente visible"
+            }
+          }
+        }
+      },
+      "effects": {
+        "wz24ControlEff01": {
+          "name": "Controlado por Maestro Nigromante",
+          "description": ""
+        }
+      },
+      "advancement": {}
+    },
+    "wz24Necromanc001": {
+      "name": "Nigromante",
+      "description": "<blockquote><p>Manipula las fuerzas de la vida, la muerte y la muerte en vida.</p></blockquote><p>Los nigromantes estudian la energía que anima a los seres vivos y aprenden a extraerla, conservarla y usarla para crear o dominar muertos vivientes. Aunque muchas culturas consideran estas prácticas tabú, la tradición no determina por sí sola la moral de quien la estudia.</p><section class=\"secret\"><p><strong>Adaptación.</strong> Traslada la Escuela de Nigromancia de 2014 a la progresión del Mago 2024: niveles 3, 6, 10 y 14.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {
+        "wz24NecAdv003001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24NecAdv006001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24NecAdv010001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24NecAdv014001": {
+          "title": "Rasgos de subclase"
+        }
+      }
+    },
+    "wz24TraSavant001": {
+      "name": "Experto en Transmutación",
+      "description": "<p>Elige dos conjuros de mago de la escuela de <strong>Transmutación</strong> de nivel 2 o inferior y añádelos a tu libro de conjuros sin coste.</p><p>Además, siempre que consigas un nuevo nivel de espacios de conjuro de esta clase, puedes añadir un conjuro de mago de Transmutación a tu libro de conjuros sin coste. Debe ser de un nivel para el que tengas espacios de conjuro.</p><section class=\"secret\"><p><strong>Adaptación 2024.</strong> Usa el patrón moderno de los rasgos Experto de las escuelas oficiales.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24TraAlchemy01": {
+      "name": "Alquimia Menor",
+      "description": "<p>Puedes alterar temporalmente un objeto no mágico hecho por completo de madera, piedra no preciosa, hierro, cobre o plata, transformándolo por entero en cualquiera de esos materiales.</p><p>Por cada 10 minutos de trabajo transformas hasta 1 pie cúbico. El objeto recupera su material original tras 1 hora o cuando pierdes la concentración, como si estuvieras concentrándote en un conjuro.</p><section class=\"secret\"><p><strong>Adaptación 2024.</strong> Se obtiene a nivel 3 para ajustarse a la progresión moderna de subclases.</p><p><strong>Automatización.</strong> La actividad inicia una concentración nativa de una hora; la transformación concreta del objeto se describe narrativamente.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24TraAlcAct001": {
+          "name": "Alquimia Menor",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": "Toque; 10 minutos por pie cúbico"
+          },
+          "target": {
+            "affects": {
+              "special": "Objeto no mágico de madera, piedra no preciosa, hierro, cobre o plata"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24TraStone0001": {
+      "name": "Piedra de Transmutador",
+      "description": "<p>Tras 8 horas de trabajo creas una piedra que almacena magia de Transmutación. Puedes llevarla tú o entregarla a otra criatura. Mientras la posea, el portador obtiene uno de estos beneficios, elegido al crear la piedra:</p><ul><li>Visión en la oscuridad hasta 60 pies.</li><li>Un aumento de 10 pies a su velocidad mientras no esté cargada.</li><li>Competencia en salvaciones de Constitución.</li><li>Resistencia a ácido, frío, fuego, relámpago o trueno, elegido al crear la piedra.</li></ul><p>Cuando lances un conjuro de Transmutación de nivel 1 o superior, puedes cambiar el beneficio de la piedra si la llevas contigo. Si creas una nueva piedra, la anterior deja de existir.</p><section class=\"secret\"><p><strong>Automatización.</strong> La actividad crea un objeto transferible, sustituye la piedra anterior y aplica al portador el beneficio elegido. Al lanzar Transmutación puedes cambiarlo. La restricción por armadura pesada del aumento de velocidad debe comprobarse manualmente.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24TraStnAct001": {
+          "name": "Crear Piedra de Transmutador",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": "8 horas de trabajo"
+          },
+          "target": {
+            "affects": {
+              "special": "Crea una única Piedra de Transmutador"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24TraShape0001": {
+      "name": "Cambiar de Forma",
+      "description": "<p>Añade <strong>Polimorfar</strong> a tu libro de conjuros si todavía no lo tienes.</p><p>Puedes lanzar Polimorfar sin gastar un espacio de conjuro, pero solo sobre ti mismo y para adoptar la forma de una bestia de valor de desafío 1 o inferior. Una vez que lo lances de esta manera, no puedes volver a hacerlo hasta que finalices un descanso corto o largo. Puedes seguir lanzando Polimorfar normalmente usando espacios de conjuro.</p><section class=\"secret\"><p><strong>Adaptación 2024.</strong> Usa las reglas actuales del conjuro Polimorfar 2024; por tanto, la forma funciona conforme a la versión 2024 del conjuro, no conforme a su texto de 2014.</p><p><strong>Automatización.</strong> La actividad añade Polimorfar 2024 al libro si falta y lanza su actividad sin gastar espacio sobre el propio mago. Elige manualmente una bestia de VD 1 o inferior.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24TraShpAct001": {
+          "name": "Polimorfar sin espacio",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": ""
+          },
+          "target": {
+            "affects": {
+              "special": "Solo tú; bestia de VD 1 o inferior"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24TraMaster001": {
+      "name": "Maestro Transmutador",
+      "description": "<p>Como acción, puedes consumir toda la magia almacenada en tu Piedra de Transmutador para producir uno de los efectos siguientes. La piedra queda destruida y no puedes fabricar otra hasta que finalices un descanso largo.</p><p><strong>Transformación Mayor.</strong> Transforma un objeto no mágico que quepa en un cubo de 5 pies en otro objeto no mágico de tamaño parecido y masa igual o inferior. Debes manipularlo durante 10 minutos.</p><p><strong>Panacea.</strong> Una criatura que toques queda libre de maldiciones, enfermedades y venenos y recupera todos sus puntos de golpe.</p><p><strong>Devolver la Vida.</strong> Puedes lanzar Alzar a los muertos sobre una criatura que toques con la piedra sin gastar espacio de conjuro y sin necesitar tener ese conjuro en tu libro.</p><p><strong>Devolver la juventud.</strong> La edad aparente de una criatura voluntaria que toques se reduce en 3d10 años, hasta un mínimo de 13. Esto no aumenta su esperanza de vida.</p><section class=\"secret\"><p><strong>Automatización.</strong> Las cuatro actividades exigen y destruyen la piedra. Panacea restaura los PG y elimina Envenenado; revisa manualmente efectos narrativos. Devolver la juventud tira 3d10. Transformación Mayor y Devolver la Vida muestran instrucciones para su resolución.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {
+        "wz24TraMajAct001": {
+          "name": "Transformación Mayor",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": ""
+          },
+          "target": {
+            "affects": {
+              "special": "Objeto no mágico de hasta un cubo de 5 pies"
+            }
+          }
+        },
+        "wz24TraPanAct001": {
+          "name": "Panacea",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": ""
+          },
+          "target": {
+            "affects": {
+              "special": "Una criatura que toques"
+            }
+          }
+        },
+        "wz24TraLifAct001": {
+          "name": "Devolver la Vida",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": ""
+          },
+          "target": {
+            "affects": {
+              "special": "Criatura válida para Alzar a los muertos"
+            }
+          }
+        },
+        "wz24TraYouAct001": {
+          "name": "Devolver la juventud",
+          "activation": {
+            "condition": ""
+          },
+          "range": {
+            "special": ""
+          },
+          "target": {
+            "affects": {
+              "special": "Criatura voluntaria"
+            }
+          }
+        }
+      },
+      "effects": {},
+      "advancement": {}
+    },
+    "wz24Transmuter01": {
+      "name": "Transmutador",
+      "description": "<blockquote><p>Altera la materia, la forma y las propiedades de la realidad.</p></blockquote><p>Los transmutadores estudian la magia que modifica energía y materia. Para ellos el mundo es mutable: una sustancia puede convertirse en otra, el cuerpo puede adoptar nuevas formas y una pequeña piedra puede almacenar poderes extraordinarios.</p><section class=\"secret\"><p><strong>Adaptación.</strong> Traslada la Escuela de Transmutación de 2014 a la progresión del Mago 2024: niveles 3, 6, 10 y 14.</p></section>",
+      "source": {
+        "custom": "Adaptación PHB 2014 → reglas de Mago 2024"
+      },
+      "activities": {},
+      "effects": {},
+      "advancement": {
+        "wz24TraAdv003001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24TraAdv006001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24TraAdv010001": {
+          "title": "Rasgos de subclase"
+        },
+        "wz24TraAdv014001": {
+          "title": "Rasgos de subclase"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "pack": "dnd5e-2024-wizard-schools.classes24",
+    "entries": 24
+  }
+}
