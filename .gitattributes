@@ -19,3 +19,4 @@ tmp/ export-ignore
 node_modules/ export-ignore
 __pycache__/ export-ignore
 DEVELOPER.md export-ignore
+package.json export-ignore
