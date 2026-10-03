@@ -105,7 +105,8 @@ def validate_archive(path: Path, raw_manifest: bytes, manifest: dict) -> bytes:
             relative = entry.filename[len(prefix):]
             if not relative:
                 continue
-            parts = relative.split("/")
+            normalized = relative.rstrip("/")
+            parts = normalized.split("/")
             if "\\" in relative or any(part in {"", ".", ".."} for part in parts):
                 raise ValueError(f"unsafe archive path: {entry.filename}")
             if relative not in ROOT_FILES and parts[0] not in PAYLOAD_DIRECTORIES:
