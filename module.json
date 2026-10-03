@@ -17,5 +17,9 @@
   "esmodules": ["scripts/converters.mjs", "scripts/babele-register.mjs"],
   "url": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es",
   "manifest": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases/latest/download/module.json",
-  "download": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases/latest/download/translate-dnd5e-2024-wizard-schools-es.zip"
+  "download": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases/download/v1.0.0/translate-dnd5e-2024-wizard-schools-es.zip",
+  "bugs": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/issues",
+  "readme": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/blob/main/README.md",
+  "changelog": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/releases",
+  "license": "https://github.com/foundryvtt-sinregistrar/translate-dnd5e-2024-wizard-schools-es/blob/main/LICENSE.md"
 }

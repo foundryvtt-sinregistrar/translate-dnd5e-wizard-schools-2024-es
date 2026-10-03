@@ -2,6 +2,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "test:release": "python -B -m unittest tests.test_build_release -v",
+    "build:release": "python -B dev-tools/buildScripts/build_release.py"
   }
 }
