@@ -1,11 +1,33 @@
-/dist/
-/tmp/
-/node_modules/
+# Dependencies and local runtimes
+node_modules/
+.tmp-npm-cache/
 __pycache__/
 *.py[cod]
 .venv/
+
+# Generated distribution artifacts and temporary release files
+/dist/
+/tmp/
+/_release-zip/
+/staged.txt
+
+# Local sources and reports
+/dev-tools/export/data/*
+!/dev-tools/export/data/.gitkeep
+/dev-tools/export/_data/
+/dev-tools/_[Ii]nformes/
+
+# Local configuration and secrets
 .env
 .env.*
 !.env.example
+
+# Operating-system files
 .DS_Store
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.stackdump
