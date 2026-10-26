@@ -6,7 +6,7 @@
   "compatibility": { "minimum": "14.367", "verified": "14.368" },
   "authors": [{ "name": "foundryvtt-sinregistrar" }],
   "relationships": {
-    "systems": [{ "id": "dnd5e", "type": "system", "compatibility": { "minimum": "6.0.3", "verified": "6.0.3" } }],
+    "systems": [{ "id": "dnd5e", "type": "system", "compatibility": { "minimum": "6.0.3", "verified": "6.0.6" } }],
     "requires": [
       { "id": "dnd5e-2024-wizard-schools", "type": "module", "compatibility": { "minimum": "2.14.0", "verified": "2.14.0" } },
       { "id": "dnd-players-handbook", "type": "module" },
