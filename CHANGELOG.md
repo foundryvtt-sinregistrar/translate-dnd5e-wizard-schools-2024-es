@@ -24,6 +24,8 @@
 
 ## [1.0.0] - 2026-10-03
 
+### Added
+
 - Initial Spanish Babele translation for the English canonical Wizard Schools compendium.
 - Covers all 24 documents, four folders, activities, effects, and advancement titles by stable ID.
 

@@ -1,35 +1,56 @@
-# D&D 2024 SubClasses - Wizard Schools — Spanish Translation
+# D&D 2024 — Escuelas de magia de mago: traducción al español
 
-![Foundry v14.368](https://img.shields.io/badge/Foundry-v14.368-green)
-![dnd5e 6.0.3](https://img.shields.io/badge/dnd5e-6.0.3-blue)![PHB 2024 required](https://img.shields.io/badge/PHB_2024-required-orange)
+**Español** | [English](README.en.md)
 
-[![Latest Release](https://img.shields.io/github/v/release/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es?label=release)](https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/latest)
-[![Downloads Latest Release](https://img.shields.io/github/downloads/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/latest/total?label=descargas%20%C3%BAltima%20release)](https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/latest)
+![Foundry VTT](https://img.shields.io/badge/Foundry_VTT-14.367%2B-green) ![dnd5e](https://img.shields.io/badge/dnd5e-6.0.3%2B-blue)
+[![Última versión](https://img.shields.io/github/v/release/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es?label=versi%C3%B3n)](https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/latest)
 
-[![Downloads Total](https://img.shields.io/github/downloads/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/total?label=descargas%20totales)](https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases)
+Traducción mediante Babele para **D&D 2024 — Wizard Schools**. Traduce las cuatro carpetas y todos los campos visibles de sus 24 documentos por ID estable, sin duplicar el compendio base.
 
-Spanish Babele translation for **D&D 2024 SubClasses - Wizard Schools**.
+## Estado
 
-## Requirements
+Compatible con Foundry VTT 14.367 o posterior, dnd5e 6.0.3 o posterior, Babele 2.9.1 o posterior y el módulo base 2.14.0 o posterior.
 
-- Foundry VTT 14.367 or newer (verified with 14.368).
-- dnd5e 6.0.3.
-- D&D 2024 SubClasses - Wizard Schools 2.14.0 or newer.
-- Dungeons & Dragons Player's Handbook (PHB 2024).
-- Babele 2.9.1 or newer.
+## Requisitos
 
-Install and enable all required modules, choose Spanish as Foundry's language, then reload the world. This module translates the four folders and every visible field of the 24 documents by their stable IDs; it never replaces or duplicates the base compendium.
+- Foundry VTT 14.367 o posterior.
+- El sistema dnd5e 6.0.3 o posterior.
+- `dnd5e-2024-wizard-schools` 2.14.0 o posterior.
+- El módulo oficial PHB 2024.
+- Babele 2.9.1 o posterior.
 
-## Future languages
+## Instalación
 
-Use this module as the template for a new `translate-dnd5e-2024-wizard-schools-<lang>` repository. Keep the base module dependency, register only the intended language in `babele-register.mjs`, and preserve every document, activity, effect, and advancement ID in the translation JSON.
+Instala desde Foundry usando este manifiesto:
 
-## Compatibility matrix
+```text
+https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/latest/download/module.json
+```
 
-| Component | Minimum | Verified |
-| --- | --- | --- |
-| Foundry VTT | 14.367 | 14.368 |
-| dnd5e | 6.0.3 | 6.0.3 |
-| Base module | 2.14.0 | 2.14.0 |
-| Babele | 2.9.1 | 2.9.1 |
+## Activación y uso
 
+Activa la traducción, el módulo base, Babele, el PHB 2024 y dnd5e. Selecciona español como idioma de Foundry y recarga el mundo.
+
+## Actualización
+
+Actualiza el módulo base antes que la traducción. Las copias importadas en actores no se sincronizan automáticamente.
+
+## Contenido incluido
+
+Traduce los cuatro directorios y sus 24 documentos, preservando los IDs de documentos, actividades, efectos y avances.
+
+## Limitaciones
+
+Solo traduce los campos visibles; no reemplaza ni duplica los documentos ni modifica datos mecánicos del módulo base.
+
+## Soporte y contribuciones
+
+Comunica incidencias en el [repositorio de la traducción](https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/issues).
+
+## Desarrollo
+
+Este repositorio es la plantilla para otras traducciones. Registra únicamente el idioma objetivo en `babele-register.mjs` y conserva todos los IDs en el JSON de traducción. Consulta [CHANGELOG.md](CHANGELOG.md) para el historial de versiones.
+
+## Licencia y créditos
+
+Consulta [LICENSE.md](LICENSE.md). Las versiones publicadas contienen el ZIP instalable, un `module.json` externo y `SHA256SUMS.txt`.
