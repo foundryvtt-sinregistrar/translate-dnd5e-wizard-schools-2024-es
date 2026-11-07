@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Compatibilidad verificada con Foundry VTT 14.370 y D&D5e 6.0.6.
+
 ## [1.14.0] - 2026-10-27
 
 ### Changed
