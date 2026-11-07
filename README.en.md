@@ -54,6 +54,18 @@ Report issues in the [translation repository](https://github.com/foundryvtt-sinr
 
 This repository is the template for other translations. Register only the target language in `babele-register.mjs` and retain every ID in the translation JSON. See [CHANGELOG.md](CHANGELOG.md) for version history.
 
+## Screenshots
+
+Choosing a Wizard school when the character reaches level 3, with the base compendium in English:
+
+![Level 3 Wizard school selector in English](docs/foundry/assets/screenshots/Wizard-level3-choise-school-en.png)
+
+The same screen with the Spanish translation enabled:
+
+![Selector de escuela de mago de nivel 3 en español](docs/foundry/assets/screenshots/Wizard-level3-choise-school-es.png)
+
+See also the [public Foundry package description](docs/foundry/description-foundry.html).
+
 ## License and credits
 
 See [LICENSE.md](LICENSE.md). Published releases contain the installable ZIP, external `module.json`, and `SHA256SUMS.txt`.

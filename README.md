@@ -54,6 +54,18 @@ Comunica incidencias en el [repositorio de la traducción](https://github.com/fo
 
 Este repositorio es la plantilla para otras traducciones. Registra únicamente el idioma objetivo en `babele-register.mjs` y conserva todos los IDs en el JSON de traducción. Consulta [CHANGELOG.md](CHANGELOG.md) para el historial de versiones.
 
+## Capturas de pantalla
+
+Selección de una escuela de mago al alcanzar el nivel 3, con la traducción española activa:
+
+![Selector de escuela de mago de nivel 3 en español](docs/foundry/assets/screenshots/Wizard-level3-choise-school-es.png)
+
+La misma pantalla con el compendio base en inglés:
+
+![Level 3 Wizard school selector in English](docs/foundry/assets/screenshots/Wizard-level3-choise-school-en.png)
+
+Consulta también la [descripción pública para Foundry](docs/foundry/description-foundry.html).
+
 ## Licencia y créditos
 
 Consulta [LICENSE.md](LICENSE.md). Las versiones publicadas contienen el ZIP instalable, un `module.json` externo y `SHA256SUMS.txt`.
