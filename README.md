@@ -2,6 +2,10 @@
 
 **Español** | [English](README.en.md)
 
+<p align="center">
+  <img src="docs/foundry/assets/banner-wizard-schools-es.webp" alt="D&D5e Wizard Schools: traducción al español">
+</p>
+
 ![Foundry minimum](https://img.shields.io/badge/Foundry_min-14.367%2B-green) ![Foundry verified](https://img.shields.io/badge/Foundry_verified-14.370-blue) ![dnd5e minimum](https://img.shields.io/badge/dnd5e_min-6.0.3%2B-blue) ![dnd5e verified](https://img.shields.io/badge/dnd5e_verified-6.0.6-blue) ![Babele minimum](https://img.shields.io/badge/Babele_min-2.9.1%2B-orange) ![PHB 2024 required](https://img.shields.io/badge/PHB_2024-required-orange)
 
 ![Foundry VTT](https://img.shields.io/badge/Foundry_VTT-14.367%2B-green) ![dnd5e](https://img.shields.io/badge/dnd5e-6.0.3%2B-blue)
@@ -55,6 +59,10 @@ Comunica incidencias en el [repositorio de la traducción](https://github.com/fo
 Este repositorio es la plantilla para otras traducciones. Registra únicamente el idioma objetivo en `babele-register.mjs` y conserva todos los IDs en el JSON de traducción. Consulta [CHANGELOG.md](CHANGELOG.md) para el historial de versiones.
 
 ## Capturas de pantalla
+
+Las cuatro escuelas de mago incluidas en la traducción:
+
+![Conjurador, Encantador, Nigromante y Transmutador](docs/foundry/assets/four-wizard-schools-es.webp)
 
 Selección de una escuela de mago al alcanzar el nivel 3, con la traducción española activa:
 

@@ -2,6 +2,10 @@
 
 [Español](README.md) | **English**
 
+<p align="center">
+  <img src="docs/foundry/assets/banner-wizard-schools-es.webp" alt="D&D5e Wizard Schools: Spanish Translation">
+</p>
+
 ![Foundry minimum](https://img.shields.io/badge/Foundry_min-14.367%2B-green) ![Foundry verified](https://img.shields.io/badge/Foundry_verified-14.370-blue) ![dnd5e minimum](https://img.shields.io/badge/dnd5e_min-6.0.3%2B-blue) ![dnd5e verified](https://img.shields.io/badge/dnd5e_verified-6.0.6-blue) ![Babele minimum](https://img.shields.io/badge/Babele_min-2.9.1%2B-orange) ![PHB 2024 required](https://img.shields.io/badge/PHB_2024-required-orange)
 
 ![Foundry VTT](https://img.shields.io/badge/Foundry_VTT-14.367%2B-green) ![dnd5e](https://img.shields.io/badge/dnd5e-6.0.3%2B-blue)
@@ -55,6 +59,10 @@ Report issues in the [translation repository](https://github.com/foundryvtt-sinr
 This repository is the template for other translations. Register only the target language in `babele-register.mjs` and retain every ID in the translation JSON. See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## Screenshots
+
+The four Wizard schools included in the translation:
+
+![Conjurer, Enchanter, Necromancer, and Transmuter](docs/foundry/assets/four-wizard-schools-es.webp)
 
 Choosing a Wizard school when the character reaches level 3, with the base compendium in English:
 
