@@ -6,7 +6,7 @@
   <img src="docs/foundry/assets/banner-wizard-schools-es.webp" alt="D&D5e Wizard Schools: traducción al español">
 </p>
 
-![Foundry minimum](https://img.shields.io/badge/Foundry_min-14.367%2B-green) ![Foundry verified](https://img.shields.io/badge/Foundry_verified-14.370-blue) ![dnd5e minimum](https://img.shields.io/badge/dnd5e_min-6.0.3%2B-blue) ![dnd5e verified](https://img.shields.io/badge/dnd5e_verified-6.0.6-blue) ![Babele minimum](https://img.shields.io/badge/Babele_min-2.9.1%2B-orange) ![PHB 2024 required](https://img.shields.io/badge/PHB_2024-required-orange)
+![Foundry minimum](https://img.shields.io/badge/Foundry_min-14.367%2B-green) ![Foundry verified](https://img.shields.io/badge/Foundry_verified-14.370-blue) ![dnd5e minimum](https://img.shields.io/badge/dnd5e_min-6.0.3%2B-blue) ![dnd5e verified](https://img.shields.io/badge/dnd5e_verified-6.1.1-blue) ![Babele minimum](https://img.shields.io/badge/Babele_min-2.9.1%2B-orange) ![PHB 2024 required](https://img.shields.io/badge/PHB_2024-required-orange)
 
 ![Foundry VTT](https://img.shields.io/badge/Foundry_VTT-14.367%2B-green) ![dnd5e](https://img.shields.io/badge/dnd5e-6.0.3%2B-blue)
 [![Última versión](https://img.shields.io/github/v/release/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es?label=versi%C3%B3n)](https://github.com/foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es/releases/latest)
