@@ -6,11 +6,25 @@
   "compatibility": { "minimum": "14.367", "verified": "14.370" },
   "authors": [{ "name": "foundryvtt-sinregistrar" }],
   "relationships": {
-    "systems": [{ "id": "dnd5e", "type": "system", "compatibility": { "minimum": "6.0.3", "verified": "6.0.6" } }],
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": { "minimum": "6.0.3", "verified": "6.0.6" }
+      }
+    ],
     "requires": [
-      { "id": "dnd5e-2024-wizard-schools", "type": "module", "compatibility": { "minimum": "2.14.0", "verified": "2.14.0" } },
+      {
+        "id": "dnd5e-2024-wizard-schools",
+        "type": "module",
+        "compatibility": { "minimum": "2.14.0", "verified": "2.14.0" }
+      },
       { "id": "dnd-players-handbook", "type": "module" },
-      { "id": "babele", "type": "module", "compatibility": { "minimum": "2.9.1", "verified": "2.9.1" } }
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": { "minimum": "2.9.1", "verified": "2.9.1" }
+      }
     ]
   },
   "languages": [{ "lang": "es", "name": "Español", "path": "lang/es.json" }],
