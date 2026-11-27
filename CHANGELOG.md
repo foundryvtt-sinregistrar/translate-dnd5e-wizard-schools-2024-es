@@ -2,9 +2,15 @@
 
 ## [Unreleased]
 
+## [1.14.1] - 2026-11-27
+
 ### Changed
 
-- Compatibilidad verificada con Foundry VTT 14.370 y D&D5e 6.0.6.
+- Compatibilidad verificada con Foundry VTT 14.370 y D&D5e 6.1.1.
+
+### Fixed
+
+- Excluida la documentación de desarrollo del ZIP para respetar la lista de archivos admitidos por el constructor.
 
 ## [1.14.0] - 2026-10-27
 
