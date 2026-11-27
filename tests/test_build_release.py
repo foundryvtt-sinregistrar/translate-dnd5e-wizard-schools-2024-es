@@ -1,6 +1,9 @@
 import importlib.util
 import json
+import subprocess
+import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 
@@ -26,3 +29,18 @@ class ReleaseConfigurationTests(unittest.TestCase):
     def test_version_format_is_accepted(self):
         manifest = json.loads((ROOT / "module.json").read_text(encoding="utf-8"))
         self.assertIsNotNone(BUILD_RELEASE.SAFE_VERSION.fullmatch(manifest["version"]))
+
+    def test_real_git_archive_excludes_documentation_and_passes_validation(self):
+        raw_manifest = (ROOT / "module.json").read_bytes()
+        manifest = json.loads(raw_manifest)
+        prefix = manifest["id"] + "/"
+        with tempfile.TemporaryDirectory(prefix="wizard-translation-archive-") as temporary:
+            archive_path = Path(temporary) / "module.zip"
+            subprocess.run([
+                "git", "-c", f"safe.directory={ROOT.as_posix()}", "archive", "--worktree-attributes",
+                "--format=zip", f"--prefix={prefix}", "-o", str(archive_path), "HEAD"
+            ], cwd=ROOT, check=True, capture_output=True)
+            with zipfile.ZipFile(archive_path) as archive:
+                self.assertFalse(any(name.startswith(prefix + "docs/") for name in archive.namelist()))
+                self.assertFalse(any(name.startswith(prefix + "tests/") for name in archive.namelist()))
+            BUILD_RELEASE.validate_archive(archive_path, raw_manifest, manifest)
